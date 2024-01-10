@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,c,n;
+	printf("enter a number\n: ");
+	scanf("%d%d",&a,&b);
+	printf("enter\n 1for sum\n 2 for sub\n 3 for mal\n 4 for div\n");
+	scanf("%d",&n);
+	
+	switch (n)
+	{
+	case 1 :{
+		c=a+b;
+		printf("sum=%d",c);
+		break;
+	}
+	case 2 :{
+		c=a-b;
+		printf("sum=%d",c);
+		break;
+	}
+	case 3 :{
+		c=a*b;
+		printf("mal=%d",c);
+		break;
+	}
+	case 4:{
+		c=a/b;
+		printf("div=%d",c);
+		break;
+	}
+	default:{
+		printf("invalid");
+		break;
+		
+	}
+}
+}
